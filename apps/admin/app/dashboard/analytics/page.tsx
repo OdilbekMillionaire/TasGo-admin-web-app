@@ -121,7 +121,8 @@ export default function AnalyticsPage() {
         .in("order_id", orderIds);
 
       const tally: Record<string, number> = {};
-      for (const item of itemsData ?? []) {
+      const items = (itemsData ?? []) as { product_name_snapshot: string; quantity: number }[];
+      for (const item of items) {
         tally[item.product_name_snapshot] = (tally[item.product_name_snapshot] ?? 0) + item.quantity;
       }
       const sorted = Object.entries(tally)

@@ -1,10 +1,9 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { supabaseAdmin } from "@/lib/supabase-admin";
-import type { Database } from "@tasgo/types";
+import type { Database, UserRole } from "@tasgo/types";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
-type UserRole = Database["public"]["Enums"]["user_role"];
 
 const ROLE_TABS: { value: UserRole | "all"; label: string }[] = [
   { value: "all", label: "Barchasi" },

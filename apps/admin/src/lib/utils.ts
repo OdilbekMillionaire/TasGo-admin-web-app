@@ -1,4 +1,4 @@
-import type { ClassValue } from "clsx";
+type ClassValue = string | number | boolean | null | undefined;
 
 // Simple className utility (avoids needing clsx dependency)
 export function cn(...classes: ClassValue[]): string {

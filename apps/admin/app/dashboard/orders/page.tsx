@@ -139,7 +139,7 @@ export default function OrdersPage() {
                       >
                         Ko'rish
                       </Link>
-                      {order.payment_status === "paid" && order.status !== "refunded" && (
+                      {order.payment_status === "paid" && (
                         <button
                           onClick={() => handleRefund(order.id)}
                           className="text-xs text-red-600 font-medium hover:underline"
