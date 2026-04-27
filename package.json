@@ -1,0 +1,33 @@
+{
+  "name": "tasgo",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "dev:mobile": "turbo run dev --filter=mobile",
+    "dev:staff": "turbo run dev --filter=staff",
+    "dev:admin": "turbo run dev --filter=admin",
+    "db:push": "supabase db push",
+    "db:seed": "supabase db reset",
+    "db:types": "supabase gen types typescript --local > packages/types/src/database.generated.ts"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.5",
+    "@types/node": "^20.12.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "19.1.0",
+      "react-dom": "19.1.0"
+    }
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

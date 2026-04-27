@@ -1,0 +1,43 @@
+{
+  "name": "admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 5000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tasgo/config": "workspace:*",
+    "@tasgo/i18n": "workspace:*",
+    "@tasgo/supabase": "workspace:*",
+    "@tasgo/types": "workspace:*",
+    "@tasgo/ui": "workspace:*",
+    "@supabase/ssr": "^0.3.0",
+    "@supabase/supabase-js": "^2.43.0",
+    "@tanstack/react-query": "^5.35.0",
+    "chart.js": "^4.4.2",
+    "react-chartjs-2": "^5.2.0",
+    "i18next": "^23.11.0",
+    "lucide-react": "^0.379.0",
+    "next": "14.2.3",
+    "next-pwa": "^5.6.0",
+    "react": "^18.3.1",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^14.1.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@types/react-beautiful-dnd": "^13.1.8",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  }
+}

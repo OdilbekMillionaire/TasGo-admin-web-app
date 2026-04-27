@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <!-- TasGo Logo: Stylized grocery basket with location pin arrow motif -->
+
+  <!-- Background circle (optional, for app icon context) -->
+  <!-- Basket body -->
+  <path
+    d="M56 104 L56 192 Q56 200 64 200 L192 200 Q200 200 200 192 L200 104 Z"
+    fill="#2E7D32"
+    rx="8"
+  />
+
+  <!-- Basket weave lines (horizontal) -->
+  <line x1="56" y1="136" x2="200" y2="136" stroke="#1B5E20" stroke-width="3" opacity="0.5"/>
+  <line x1="56" y1="168" x2="200" y2="168" stroke="#1B5E20" stroke-width="3" opacity="0.5"/>
+
+  <!-- Basket weave lines (vertical) -->
+  <line x1="96" y1="104" x2="96" y2="200" stroke="#1B5E20" stroke-width="3" opacity="0.5"/>
+  <line x1="128" y1="104" x2="128" y2="200" stroke="#1B5E20" stroke-width="3" opacity="0.5"/>
+  <line x1="160" y1="104" x2="160" y2="200" stroke="#1B5E20" stroke-width="3" opacity="0.5"/>
+
+  <!-- Basket handles (arcs) -->
+  <path
+    d="M80 104 Q80 56 128 56 Q176 56 176 104"
+    stroke="#2E7D32"
+    stroke-width="12"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+  <!-- Basket rim -->
+  <rect x="48" y="96" width="160" height="20" rx="10" fill="#558B2F"/>
+
+  <!-- Location pin / arrow — amber accent, top right of basket -->
+  <!-- Pin body -->
+  <circle cx="192" cy="64" r="28" fill="#FFC107"/>
+  <!-- Pin dot -->
+  <circle cx="192" cy="58" r="10" fill="#FFFFFF"/>
+  <!-- Pin tail (pointing down-right, suggesting speed/delivery) -->
+  <path
+    d="M192 80 L192 96 L206 80 Z"
+    fill="#FFC107"
+  />
+  <!-- Speed arrow lines inside pin -->
+  <line x1="180" y1="64" x2="172" y2="64" stroke="#FF8F00" stroke-width="3" stroke-linecap="round"/>
+  <line x1="180" y1="70" x2="168" y2="70" stroke="#FF8F00" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Fresh produce dots inside basket (top) -->
+  <circle cx="96" cy="124" r="8" fill="#8BC34A"/>
+  <circle cx="128" cy="118" r="10" fill="#7CB342"/>
+  <circle cx="160" cy="124" r="8" fill="#AED581"/>
+</svg>

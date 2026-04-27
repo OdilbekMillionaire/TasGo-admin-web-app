@@ -1,0 +1,38 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": [
+    "SUPABASE_URL",
+    "SUPABASE_ANON_KEY",
+    "SUPABASE_SERVICE_ROLE_KEY",
+    "ESKIZ_EMAIL",
+    "ESKIZ_PASSWORD",
+    "OCTO_SHOP_ID",
+    "OCTO_SECRET_KEY",
+    "OCTO_API_URL",
+    "GOOGLE_CLOUD_TRANSLATION_API_KEY",
+    "YANDEX_MAPS_API_KEY",
+    "EXPO_ACCESS_TOKEN",
+    "DELIVERY_ZONE_CENTER_LAT",
+    "DELIVERY_ZONE_CENTER_LNG",
+    "DELIVERY_ZONE_RADIUS_KM",
+    "STORE_NAME",
+    "MIN_ORDER_FREE_DELIVERY_UZS",
+    "DELIVERY_FEE_UZS"
+  ],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "dependsOn": ["^build"]
+    },
+    "type-check": {
+      "dependsOn": ["^build"]
+    }
+  }
+}
